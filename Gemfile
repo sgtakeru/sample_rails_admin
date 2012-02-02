@@ -29,3 +29,7 @@ gem 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+gem 'devise', '1.5.3'
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git', :branch => 'rails-3.0'
+

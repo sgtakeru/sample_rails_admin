@@ -1,4 +1,6 @@
 Hoge::Application.routes.draw do
+  devise_for :managers
+
   resources :users
 
   # The priority is based upon order of creation:

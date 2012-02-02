@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/sferik/rails_admin.git
+  revision: 4af3fc415456ac00aeaa1c56bf1869234524b50f
+  branch: rails-3.0
+  specs:
+    rails_admin (0.0.1)
+      builder (~> 2.1.0)
+      haml (>= 3.1.0, < 3.3.0)
+      rails (~> 3.0.11)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -29,9 +39,15 @@ GEM
       activesupport (= 3.0.11)
     activesupport (3.0.11)
     arel (2.0.10)
+    bcrypt-ruby (3.0.1)
     builder (2.1.2)
+    devise (1.5.3)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.0.3)
+      warden (~> 1.1)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    haml (3.1.4)
     i18n (0.5.0)
     json (1.6.5)
     mail (2.2.19)
@@ -40,6 +56,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.17.2)
+    orm_adapter (0.0.6)
     polyglot (0.3.3)
     rack (1.2.5)
     rack-mount (0.6.14)
@@ -69,10 +86,14 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.31)
+    warden (1.1.0)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  devise (= 1.5.3)
   rails (= 3.0.11)
+  rails_admin!
   sqlite3
